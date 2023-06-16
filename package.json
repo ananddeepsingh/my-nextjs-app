@@ -1,12 +1,15 @@
 {
   "name": "my-nextjs-app",
+  "homepage": "https://ananddeepsingh.github.io/my-nextjs-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "next": "13.4.4",
